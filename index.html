@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Urban Bites, your neighbourhood restaurant.">
+  <title>Urban Bites | Restaurant</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #27231f;
+      line-height: 1.6;
+    }
+    header {
+      background: #25231f;
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .logo { font-size: 25px; font-weight: bold; color: #f4c56b; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; }
+    nav a:hover { color: #f4c56b; }
+    .hero {
+      min-height: 390px;
+      padding: 65px 7%;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      background: linear-gradient(120deg, #39271c, #8b4b2d);
+      color: white;
+    }
+    .hero h1 { font-size: clamp(36px, 7vw, 58px); line-height: 1.15; }
+    .hero p { margin: 18px 0 25px; font-size: 18px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #f4c56b;
+      color: #27231f;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 0;
+      cursor: pointer;
+    }
+    section { padding: 55px 7%; }
+    .section-title { text-align: center; margin-bottom: 28px; }
+    .section-title h2 { font-size: 32px; }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+    .item {
+      background: white;
+      border-radius: 12px;
+      padding: 22px;
+      border: 1px solid #eee1d2;
+      box-shadow: 0 4px 14px #39271c0d;
+    }
+    .food-icon { font-size: 38px; }
+    .item h3 { margin: 8px 0; }
+    .price { color: #9a532a; font-weight: bold; margin-top: 10px; }
+    .about { background: #f2e7d8; text-align: center; }
+    .about p { max-width: 650px; margin: auto; }
+    .contact { text-align: center; }
+    .contact p { margin: 8px 0; }
+    footer {
+      background: #25231f;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+    @media (max-width: 480px) {
+      header { justify-content: center; }
+      nav { justify-content: center; gap: 12px; }
+      section { padding: 42px 5%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Urban Bites</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <h1>Good Food.<br>Great Moments.</h1>
+        <p>Fresh flavours, delicious meals and a warm welcome.</p>
+        <a class="btn" href="#menu">Explore Our Menu</a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="section-title">
+        <h2>Our Popular Menu</h2>
+        <p>Simple favourites made for sharing.</p>
+      </div>
+      <div class="menu">
+        <article class="item">
+          <div class="food-icon" aria-hidden="true">🍕</div>
+          <h3>Margherita Pizza</h3>
+          <p>Classic cheese, tomato and herbs.</p>
+          <p class="price">₹199</p>
+        </article>
+        <article class="item">
+          <div class="food-icon" aria-hidden="true">🍔</div>
+          <h3>Veg Burger</h3>
+          <p>Crispy vegetable patty and fresh lettuce.</p>
+          <p class="price">₹129</p>
+        </article>
+        <article class="item">
+          <div class="food-icon" aria-hidden="true">🍝</div>
+          <h3>White Sauce Pasta</h3>
+          <p>Creamy pasta with herbs and vegetables.</p>
+          <p class="price">₹179</p>
+        </article>
+        <article class="item">
+          <div class="food-icon" aria-hidden="true">🥪</div>
+          <h3>Grilled Sandwich</h3>
+          <p>Toasted bread with a vegetable filling.</p>
+          <p class="price">₹99</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-title"><h2>About Urban Bites</h2></div>
+      <p>We are a sample neighbourhood restaurant bringing people together over tasty food, friendly service and memorable moments. Visit us with your family and friends!</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title"><h2>Visit Us</h2></div>
+      <p><strong>Address:</strong> Add your sample restaurant address here</p>
+      <p><strong>Opening hours:</strong> 11:00 AM – 10:00 PM</p>
+      <p><strong>Phone:</strong> Add your restaurant phone number</p>
+      <p style="margin-top:22px">Want to order? Replace the demo number in the button with your WhatsApp number.</p>
+      <a class="btn" href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Urban Bites. Sample restaurant website.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html>
