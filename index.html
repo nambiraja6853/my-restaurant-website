@@ -4,315 +4,656 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to Urban Bites, your neighbourhood restaurant.">
-  <title>Urban Bites | Restaurant</title>
+  <meta name="theme-color" content="#211b17">
+  <meta name="description" content="Discover delicious burgers, pizza, pasta and more at Urban Bites. Fresh food, great taste, and friendly service.">
+  <title>Urban Bites | Fresh Food, Great Taste</title>
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: Arial, sans-serif;
-      background: #fffaf3;
-      color: #27231f;
-      line-height: 1.6;
+    :root {
+      --dark: #211b17;
+      --brown: #67412b;
+      --gold: #f4c56b;
+      --cream: #fffaf3;
+      --light: #f1e4d3;
+      --text: #30251e;
+      --muted: #76675b;
+      --white: #ffffff;
     }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: 0 auto;
+    }
+
     header {
-      background: #25231f;
-      color: white;
-      padding: 18px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--dark);
+      box-shadow: 0 4px 18px #00000020;
+    }
+
+    .navbar {
+      min-height: 76px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--gold);
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+    }
+
+    nav a {
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 700;
+      transition: color .2s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 490px;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(ellipse at 85% 15%, #b77b4670, transparent 42%),
+        linear-gradient(135deg, var(--dark), var(--brown));
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 680px;
+      padding: 75px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 530px;
+      color: #f3e8dc;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
       flex-wrap: wrap;
       gap: 14px;
     }
-    .logo { font-size: 25px; font-weight: bold; color: #f4c56b; }
-    nav { display: flex; gap: 18px; flex-wrap: wrap; }
-    nav a { color: white; text-decoration: none; }
-    nav a:hover { color: #f4c56b; }
-    .hero {
-      min-height: 390px;
-      padding: 65px 7%;
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 13px 24px;
+      border: 2px solid var(--gold);
+      border-radius: 30px;
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 14px;
+      font-weight: 800;
+      transition: transform .2s, background .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #ffdb91;
+    }
+
+    .btn-outline {
+      color: var(--white);
+      background: transparent;
+      border-color: #ffffff80;
+    }
+
+    .btn-outline:hover {
+      color: var(--dark);
+      background: var(--white);
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 28px 0;
+    }
+
+    .highlight {
+      text-align: center;
+      padding: 12px;
+    }
+
+    .highlight strong {
+      display: block;
+      font-size: 17px;
+    }
+
+    .highlight span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-heading {
+      max-width: 650px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+
+    .section-heading .eyebrow {
+      color: #87451f;
+      margin-bottom: 8px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 5vw, 42px);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .menu-card {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid #ead9c5;
+      border-radius: 18px;
+      box-shadow: 0 6px 22px #39271c0a;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px #39271c18;
+    }
+
+    .food-icon {
       display: grid;
       place-items: center;
-      text-align: center;
-      background: linear-gradient(120deg, #39271c, #8b4b2d);
-      color: white;
+      min-height: 150px;
+      background: linear-gradient(135deg, #fff0d6, #f1d6b1);
+      font-size: 68px;
     }
-    .hero h1 { font-size: clamp(36px, 7vw, 58px); line-height: 1.15; }
-    .hero p { margin: 18px 0 25px; font-size: 18px; }
-    .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      background: #f4c56b;
-      color: #27231f;
-      border-radius: 7px;
-      text-decoration: none;
-      font-weight: bold;
-      border: 0;
-      cursor: pointer;
+
+    .menu-info {
+      padding: 21px;
     }
-    section { padding: 55px 7%; }
-    .section-title { text-align: center; margin-bottom: 28px; }
-    .section-title h2 { font-size: 32px; }
-    .menu {
+
+    .menu-info h3 {
+      font-size: 19px;
+      margin-bottom: 7px;
+    }
+
+    .menu-info p {
+      color: var(--muted);
+      font-size: 13px;
+      min-height: 44px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      color: #87451f;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .about-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
     }
-    .item {
-      background: white;
-      border-radius: 12px;
-      padding: 22px;
-      border: 1px solid #eee1d2;
-      box-shadow: 0 4px 14px #39271c0d;
+
+    .about-art {
+      min-height: 330px;
+      display: grid;
+      place-items: center;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 30% 30%, #f4c56b80, transparent 45%),
+        linear-gradient(135deg, #211b17, #67412b);
+      color: var(--gold);
+      font-size: clamp(90px, 15vw, 150px);
     }
-    .food-icon { font-size: 38px; }
-    .item h3 { margin: 8px 0; }
-    .price { color: #9a532a; font-weight: bold; margin-top: 10px; }
-    .about { background: #f2e7d8; text-align: center; }
-    .about p { max-width: 650px; margin: auto; }
-    .contact { text-align: center; }
-    .contact p { margin: 8px 0; }
-    footer {
-      background: #25231f;
-      color: white;
+
+    .about-copy .eyebrow {
+      color: #87451f;
+    }
+
+    .about-copy h2 {
+      font-size: clamp(30px, 5vw, 43px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .about-copy p {
+      color: #66574b;
+      margin-bottom: 16px;
+    }
+
+    .about-copy .btn {
+      margin-top: 8px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .contact-card {
+      padding: 28px 20px;
       text-align: center;
-      padding: 22px;
-    }
-    @media (max-width: 480px) {
-      header { justify-content: center; }
-      nav { justify-content: center; gap: 12px; }
-      section { padding: 42px 5%; }
+      border: 1px solid #ead9c5;
+      border-radius: 16px;
+      background: var(--white);
     }
 
-/* URBAN BITES - PREMIUM DESIGN UPGRADE */
+    .contact-icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
 
-body {
-  background: #fffaf3;
-  color: #30251e;
-  font-family: Arial, sans-serif;
-  line-height: 1.7;
-}
+    .contact-card h3 {
+      margin-bottom: 8px;
+    }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: #211b17;
-  padding: 16px 5%;
-  box-shadow: 0 4px 18px #00000018;
-}
+    .contact-card p {
+      color: var(--muted);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
 
-.logo {
-  color: #f4c56b;
-  letter-spacing: 1px;
-  font-size: 26px;
-}
+    .contact-card a {
+      color: #87451f;
+      font-weight: 700;
+    }
 
-nav a {
-  font-weight: 600;
-  transition: color 0.2s;
-}
+    .cta {
+      padding: 48px 25px;
+      margin-top: 35px;
+      border-radius: 20px;
+      text-align: center;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--dark), var(--brown));
+    }
 
-nav a:hover {
-  color: #f4c56b;
-}
+    .cta h3 {
+      font-size: clamp(24px, 4vw, 34px);
+      margin-bottom: 10px;
+    }
 
-.hero {
-  min-height: 440px;
-  padding: 70px 6%;
-  background:
-    radial-gradient(ellipse at top right, #b77b46, transparent 48%),
-    linear-gradient(135deg, #211b17, #67412b);
-}
+    .cta p {
+      color: #f3e8dc;
+      margin-bottom: 22px;
+    }
 
-.hero h1 {
-  letter-spacing: -1px;
-  line-height: 1.15;
-  margin-bottom: 18px;
-}
+    footer {
+      padding: 28px 0;
+      color: #eee1d3;
+      background: var(--dark);
+      text-align: center;
+      font-size: 13px;
+    }
 
-.hero p {
-  max-width: 520px;
-}
+    footer strong {
+      color: var(--gold);
+    }
 
-.btn {
-  border-radius: 30px;
-  padding: 13px 25px;
-  transition: transform 0.2s, background 0.2s;
-}
+    :focus-visible {
+      outline: 3px solid #c17c32;
+      outline-offset: 4px;
+    }
 
-.btn:hover {
-  background: #ffdb91;
-  transform: translateY(-2px);
-}
+    @media (max-width: 850px) {
+      .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
 
-section {
-  padding: 60px 6%;
-}
+      .about-grid {
+        gap: 30px;
+      }
 
-.section-title h2 {
-  color: #30251e;
-  letter-spacing: -0.5px;
-  margin-bottom: 8px;
-}
+      nav {
+        gap: 12px 17px;
+      }
+    }
 
-.menu {
-  gap: 24px;
-}
+    @media (max-width: 560px) {
+      .navbar {
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 10px;
+      }
 
-.item {
-  background: #ffffff;
-  border: 1px solid #ead9c5;
-  border-radius: 16px;
-  padding: 25px;
-  box-shadow: 0 5px 18px #39271c0a;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+      .logo {
+        font-size: 23px;
+      }
 
-.item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px #39271c16;
-}
+      nav {
+        justify-content: center;
+        gap: 8px 16px;
+      }
 
-.food-icon {
-  display: inline-block;
-  padding: 10px;
-  background: #fff3df;
-  border-radius: 12px;
-}
+      nav a {
+        font-size: 13px;
+      }
 
-.price {
-  color: #87451f;
-  font-size: 19px;
-  font-weight: 700;
-}
+      .hero {
+        min-height: 400px;
+      }
 
-.about {
-  background: #f1e4d3;
-}
+      .hero-content {
+        padding: 58px 0;
+      }
 
-.contact {
-  background: #fffaf3;
-}
+      .hero h1 {
+        letter-spacing: -1px;
+      }
 
-footer {
-  padding: 28px 16px;
-  background: #211b17;
-}
+      .hero p {
+        font-size: 15px;
+      }
 
-@media (max-width: 480px) {
-  header {
-    padding: 14px 12px;
-    gap: 12px;
-  }
+      .highlights {
+        gap: 5px;
+      }
 
-  nav {
-    gap: 10px 16px;
-    justify-content: center;
-  }
+      .highlight strong {
+        font-size: 14px;
+      }
 
-  nav a {
-    font-size: 14px;
-  }
+      .highlight span {
+        font-size: 11px;
+      }
 
-  .hero {
-    min-height: 360px;
-    padding: 48px 18px;
-  }
+      section {
+        padding: 55px 0;
+      }
 
-  .hero p {
-    font-size: 16px;
-  }
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
 
-  section {
-    padding: 42px 5%;
-  }
+      .food-icon {
+        min-height: 130px;
+      }
 
-  .menu {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
+      .menu-info p {
+        min-height: auto;
+      }
 
-  .item {
-    padding: 22px;
-  }
-}
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-art {
+        min-height: 230px;
+      }
+
+      .cta {
+        padding: 35px 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="logo">Urban Bites</div>
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container navbar">
+      <a href="#home" class="logo">URBAN BITES<span>.</span></a>
+
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div>
-        <h1>Good Food.<br>Great Moments.</h1>
-        <p>Fresh flavours, delicious meals and a warm welcome.</p>
-        <a class="btn" href="#menu">Explore Our Menu</a>
+      <div class="container hero-content">
+        <span class="eyebrow">Welcome to Urban Bites</span>
+        <h1>Good Food.<br><span>Great Mood.</span></h1>
+        <p>
+          Discover your new favourite flavours. From delicious burgers
+          to cheesy pizza, enjoy tasty food made for sharing.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#menu">Explore Our Menu ↗</a>
+          <a class="btn btn-outline" href="#about">Our Story</a>
+        </div>
       </div>
     </section>
 
-    <section id="menu">
-      <div class="section-title">
-        <h2>Our Popular Menu</h2>
-        <p>Simple favourites made for sharing.</p>
+    <div class="container highlights">
+      <div class="highlight">
+        <strong>🍴 Fresh Flavours</strong>
+        <span>Made with care</span>
       </div>
-      <div class="menu">
-        <article class="item">
-          <div class="food-icon" aria-hidden="true">🍕</div>
-          <h3>Margherita Pizza</h3>
-          <p>Classic cheese, tomato and herbs.</p>
-          <p class="price">₹199</p>
-        </article>
-        <article class="item">
-          <div class="food-icon" aria-hidden="true">🍔</div>
-          <h3>Veg Burger</h3>
-          <p>Crispy vegetable patty and fresh lettuce.</p>
-          <p class="price">₹129</p>
-        </article>
-        <article class="item">
-          <div class="food-icon" aria-hidden="true">🍝</div>
-          <h3>White Sauce Pasta</h3>
-          <p>Creamy pasta with herbs and vegetables.</p>
-          <p class="price">₹179</p>
-        </article>
-        <article class="item">
-          <div class="food-icon" aria-hidden="true">🥪</div>
-          <h3>Grilled Sandwich</h3>
-          <p>Toasted bread with a vegetable filling.</p>
-          <p class="price">₹99</p>
-        </article>
+      <div class="highlight">
+        <strong>⭐ Great Taste</strong>
+        <span>Every bite matters</span>
+      </div>
+      <div class="highlight">
+        <strong>❤️ Made for You</strong>
+        <span>Good food, good times</span>
+      </div>
+    </div>
+
+    <section id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Our Favourites</span>
+          <h2>Explore Our Menu</h2>
+          <p>
+            Delicious bites, comforting classics, and flavours
+            worth coming back for.
+          </p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="food-icon" aria-hidden="true">🍕</div>
+            <div class="menu-info">
+              <h3>Classic Pizza</h3>
+              <p>Cheesy, flavourful, and baked to golden perfection.</p>
+              <span class="price">₹199</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="food-icon" aria-hidden="true">🍔</div>
+            <div class="menu-info">
+              <h3>Signature Burger</h3>
+              <p>A satisfying burger layered with delicious flavours.</p>
+              <span class="price">₹149</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="food-icon" aria-hidden="true">🍝</div>
+            <div class="menu-info">
+              <h3>Creamy Pasta</h3>
+              <p>A comforting pasta dish with a rich, creamy sauce.</p>
+              <span class="price">₹179</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="food-icon" aria-hidden="true">🥪</div>
+            <div class="menu-info">
+              <h3>Loaded Sandwich</h3>
+              <p>A toasted sandwich packed with delicious fillings.</p>
+              <span class="price">₹99</span>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="about" id="about">
-      <div class="section-title"><h2>About Urban Bites</h2></div>
-      <p>We are a sample neighbourhood restaurant bringing people together over tasty food, friendly service and memorable moments. Visit us with your family and friends!</p>
+      <div class="container about-grid">
+        <div class="about-art" aria-hidden="true">🍽️</div>
+
+        <div class="about-copy">
+          <span class="eyebrow">Our Story</span>
+          <h2>Made with Passion. Served with Love.</h2>
+          <p>
+            At Urban Bites, we believe great food brings people
+            together. Our goal is to make every meal enjoyable,
+            welcoming, and full of flavour.
+          </p>
+          <p>
+            Whether you're catching up with friends or enjoying
+            a relaxed meal, we're here to make it special.
+          </p>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="section-title"><h2>Visit Us</h2></div>
-      <p><strong>Address:</strong> Add your sample restaurant address here</p>
-      <p><strong>Opening hours:</strong> 11:00 AM – 10:00 PM</p>
-      <p><strong>Phone:</strong> Add your restaurant phone number</p>
-      <p style="margin-top:22px">Want to order? Replace the demo number in the button with your WhatsApp number.</p>
-      <a class="btn" href="https://wa.me/910000000000" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+    <section id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Say Hello</span>
+          <h2>Visit Urban Bites</h2>
+          <p>
+            Have a question or want to learn more? Contact us using
+            the details you add below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <h3>Our Location</h3>
+            <p>Add your restaurant address here.</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <h3>Call Us</h3>
+            <p>Add your restaurant phone number here.</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <h3>Email Us</h3>
+            <p>Add your restaurant email here.</p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <h3>Good Food Is Always a Good Idea.</h3>
+          <p>We look forward to welcoming you to Urban Bites.</p>
+          <a href="#menu" class="btn">Discover the Menu</a>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Urban Bites. Sample restaurant website.</p>
+    <div class="container">
+      <p>© <span id="year"></span> <strong>Urban Bites</strong>. All rights reserved.</p>
+      <p>Fresh Food · Great Taste · Good Times</p>
+    </div>
   </footer>
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
   </script>
 </body>
-  </html>
+</html>
+
