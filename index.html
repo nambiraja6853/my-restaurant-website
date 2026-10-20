@@ -84,6 +84,160 @@
       nav { justify-content: center; gap: 12px; }
       section { padding: 42px 5%; }
     }
+
+/* URBAN BITES - PREMIUM DESIGN UPGRADE */
+
+body {
+  background: #fffaf3;
+  color: #30251e;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #211b17;
+  padding: 16px 5%;
+  box-shadow: 0 4px 18px #00000018;
+}
+
+.logo {
+  color: #f4c56b;
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+
+nav a {
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #f4c56b;
+}
+
+.hero {
+  min-height: 440px;
+  padding: 70px 6%;
+  background:
+    radial-gradient(ellipse at top right, #b77b46, transparent 48%),
+    linear-gradient(135deg, #211b17, #67412b);
+}
+
+.hero h1 {
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  max-width: 520px;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 13px 25px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn:hover {
+  background: #ffdb91;
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 60px 6%;
+}
+
+.section-title h2 {
+  color: #30251e;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.menu {
+  gap: 24px;
+}
+
+.item {
+  background: #ffffff;
+  border: 1px solid #ead9c5;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 5px 18px #39271c0a;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px #39271c16;
+}
+
+.food-icon {
+  display: inline-block;
+  padding: 10px;
+  background: #fff3df;
+  border-radius: 12px;
+}
+
+.price {
+  color: #87451f;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.about {
+  background: #f1e4d3;
+}
+
+.contact {
+  background: #fffaf3;
+}
+
+footer {
+  padding: 28px 16px;
+  background: #211b17;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 14px 12px;
+    gap: 12px;
+  }
+
+  nav {
+    gap: 10px 16px;
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 360px;
+    padding: 48px 18px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 42px 5%;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .item {
+    padding: 22px;
+  }
+}
   </style>
 </head>
 <body>
