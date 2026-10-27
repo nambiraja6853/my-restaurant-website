@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +11,16 @@
 :root{--ink:#14251e;--brown:#1d4938;--gold:#cba15b;--cream:#f7f5ef;--paper:#ebe6d9;--muted:#6d776f;--line:#dfdfd3;--white:#fff}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1180px,92%);margin:auto}
 header{position:sticky;top:0;z-index:20;background:#14251ef5;color:white;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:Georgia,serif;font-size:24px;font-weight:bold;letter-spacing:.4px}.brand span{color:var(--gold)}.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:3px;color:#e6d8c8}.navlinks{display:flex;gap:25px;align-items:center}.navlinks a{font-size:14px;color:#f8eee4}.navlinks a:hover{color:var(--gold)}.cart-button,.primary,.secondary{border:0;border-radius:999px;padding:12px 19px;font-weight:700}.cart-button,.primary{background:var(--gold);color:var(--ink)}.cart-button b{background:var(--ink);color:white;border-radius:50%;padding:2px 7px;margin-left:5px}
-.hero{color:white;background:linear-gradient(90deg,#17110df2 0%,#21150dd9 42%,#21150d36 100%),url('https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=2000&q=85') center/cover;min-height:510px;display:flex;align-items:center}.hero-inner{padding:75px 0;max-width:670px}.eyebrow{color:#a26432;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:800}.hero .eyebrow{color:var(--gold)}h1,h2,h3,p{margin-top:0}h1{font:clamp(44px,7vw,76px)/1.02 Georgia,'Times New Roman',serif;letter-spacing:-1.8px;margin:15px 0 20px}h1 span{color:var(--gold);font-style:italic}.hero p{max-width:520px;color:#f0e4d8;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.secondary{background:transparent;color:white;border:1px solid #ffffff9c}.trust{display:grid;grid-template-columns:repeat(4,1fr);background:#e8e2d3;padding:22px 0}.trust div{text-align:center;border-right:1px solid #d9c7b0;padding:5px 12px}.trust div:last-child{border:0}.trust strong{display:block;font-size:14px}.trust small{color:var(--muted)}
+.hero{color:white;background:linear-gradient(90deg,#17110df2 0%,#21150dd9 42%,#21150d36 100%),url('https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=1800&q=85') center/cover;min-height:510px;display:flex;align-items:center}.hero-inner{padding:75px 0;max-width:670px}.eyebrow{color:#a26432;text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:800}.hero .eyebrow{color:var(--gold)}h1,h2,h3,p{margin-top:0}h1{font:clamp(44px,7vw,76px)/1.02 Georgia,'Times New Roman',serif;letter-spacing:-1.8px;margin:15px 0 20px}h1 span{color:var(--gold);font-style:italic}.hero p{max-width:520px;color:#f0e4d8;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.secondary{background:transparent;color:white;border:1px solid #ffffff9c}.trust{display:grid;grid-template-columns:repeat(4,1fr);background:#e8e2d3;padding:22px 0}.trust div{text-align:center;border-right:1px solid #d9c7b0;padding:5px 12px}.trust div:last-child{border:0}.trust strong{display:block;font-size:14px}.trust small{color:var(--muted)}
 section{padding:68px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 30px}.section-head h2{font:clamp(30px,4vw,43px)/1.15 Georgia,serif;margin:8px 0 10px}.section-head p{color:var(--muted);margin-bottom:0}
 .tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:25px 0 20px}.search{flex:1;min-width:210px;position:relative}.search input{width:100%;border:1px solid var(--line);background:white;border-radius:999px;padding:13px 18px;outline:none}.search input:focus{border-color:#b67a3c;box-shadow:0 0 0 3px #e9b85f35}.filter-select{border:1px solid var(--line);background:white;border-radius:999px;padding:13px 16px;color:var(--ink)}
 .categories{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 28px}.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 15px;color:#5d4c3f;font-size:13px}.chip.active,.chip:hover{background:var(--ink);color:white;border-color:var(--ink)}
-.menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.food-card{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 7px 22px #3b25100a;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.food-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px #3b251018}.food-photo{height:175px;background:#ead9c5;overflow:hidden}.food-photo.photo-unavailable{background:linear-gradient(135deg,#ead9c5,#f7f5ef);display:grid;place-items:center}.food-photo.photo-unavailable:after{content:"Photo temporarily unavailable";font-size:11px;color:#786451;text-align:center;padding:8px}.food-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.food-card:hover img{transform:scale(1.04)}.food-content{padding:17px;display:flex;flex-direction:column;flex:1}.food-cat{color:#9a713d;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;font-weight:800}.food-title{font:20px/1.25 Georgia,serif;margin:7px 0 3px}.food-marathi{font-size:13px;color:#76695e;margin-bottom:8px}.food-desc{font-size:13px;color:var(--muted);margin-bottom:14px;flex:1}.food-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}.price{font-weight:800;font-size:19px;color:var(--brown)}.quantity-note{font-size:11px;color:var(--muted);margin-top:2px}.add{border:0;border-radius:999px;background:var(--brown);color:white;padding:9px 13px;font-size:12px;font-weight:700}.add:hover{background:#28644d}.no-price{font-size:12px;color:var(--muted)}.empty{grid-column:1/-1;text-align:center;padding:45px 20px;background:white;border-radius:16px;color:var(--muted)}
+.menu-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.food-card{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:0 7px 22px #3b25100a;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.food-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px #3b251018}.food-photo{height:175px;background:#ead9c5;overflow:hidden}.food-photo.photo-unavailable{background:linear-gradient(135deg,#ead9c5,#f7f5ef);display:grid;place-items:center}.food-photo.photo-unavailable:after{content:"Food photo temporarily unavailable";font-size:11px;color:#786451;text-align:center;padding:8px}.food-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.food-card:hover img{transform:scale(1.04)}.food-content{padding:17px;display:flex;flex-direction:column;flex:1}.food-cat{color:#9a713d;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;font-weight:800}.food-title{font:20px/1.25 Georgia,serif;margin:7px 0 3px}.food-marathi{font-size:13px;color:#76695e;margin-bottom:8px}.food-desc{font-size:13px;color:var(--muted);margin-bottom:14px;flex:1}.food-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}.price{font-weight:800;font-size:19px;color:var(--brown)}.quantity-note{font-size:11px;color:var(--muted);margin-top:2px}.add{border:0;border-radius:999px;background:var(--brown);color:white;padding:9px 13px;font-size:12px;font-weight:700}.add:hover{background:#28644d}.no-price{font-size:12px;color:var(--muted)}.empty{grid-column:1/-1;text-align:center;padding:45px 20px;background:white;border-radius:16px;color:var(--muted)}
 .about{background:var(--paper)}.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px}.about-image{min-height:340px;border-radius:22px;background:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:12px 12px 0 #e6cda9}.about-copy h2{font:clamp(31px,4vw,44px)/1.12 Georgia,serif;margin:9px 0 18px}.about-copy p{color:#6d5d50}.feature-list{display:grid;gap:12px;margin-top:22px}.feature{display:flex;gap:12px;align-items:center}.feature-icon{width:40px;height:40px;display:grid;place-items:center;background:#f0d29b;border-radius:50%;font-size:18px}.feature strong{display:block;font-size:14px}.feature small{color:var(--muted)}
+.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.contact-actions a{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:999px;font-weight:800;text-decoration:none}.contact-call{background:var(--gold);color:var(--ink)!important}.contact-whatsapp{background:#187c49;color:#fff!important}.contact-note{font-size:13px;color:var(--muted);margin-top:12px}
 .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.info-card{padding:27px;border:1px solid var(--line);background:white;border-radius:18px}.info-card h3{font:24px Georgia,serif}.info-card p{color:var(--muted)}.map-link{display:inline-block;color:#8b5128;font-weight:700;margin-top:8px}.footer{background:var(--ink);color:#e9ded2;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.footer small{color:#bba999}
 .cart-panel{position:fixed;right:0;top:0;bottom:0;width:min(410px,100%);background:var(--cream);z-index:50;box-shadow:-15px 0 50px #0003;transform:translateX(105%);transition:transform .25s;display:flex;flex-direction:column}.cart-panel.open{transform:translateX(0)}.cart-head{display:flex;justify-content:space-between;align-items:center;padding:20px;background:var(--ink);color:white}.cart-head h2{font:27px Georgia,serif;margin:0}.close-cart{border:0;background:transparent;color:white;font-size:28px}.cart-items{padding:16px;overflow:auto;flex:1}.cart-row{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}.cart-row strong{display:block}.cart-row small{color:var(--muted)}.qty{display:flex;align-items:center;gap:8px}.qty button{border:1px solid var(--line);background:white;border-radius:50%;width:28px;height:28px}.cart-total{padding:18px;border-top:1px solid var(--line);background:white}.total-line{display:flex;justify-content:space-between;font-size:19px;font-weight:800;margin-bottom:12px}.clear-cart{border:0;background:none;text-decoration:underline;color:var(--muted);margin-top:9px}.overlay{position:fixed;inset:0;background:#0006;z-index:40;display:none}.overlay.show{display:block}
+
 @media(max-width:850px){.navlinks{gap:13px}.menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:450px}.about-grid{gap:28px}}
 @media(max-width:560px){.nav{padding:13px 0;flex-wrap:wrap}.brand{font-size:21px}.navlinks{order:3;width:100%;justify-content:space-between;gap:8px}.navlinks a{font-size:12px}.cart-button{padding:9px 13px;font-size:12px}.hero{min-height:435px;background-position:58% center}.hero-inner{padding:56px 0}.hero p{font-size:15px}.trust{grid-template-columns:repeat(2,1fr);gap:10px}.trust div:nth-child(2){border-right:0}.trust div{padding:10px 5px}section{padding:50px 0}.menu-grid{grid-template-columns:1fr;gap:15px}.food-card{display:grid;grid-template-columns:118px minmax(0,1fr)}.food-photo{height:100%;min-height:190px}.food-content{padding:13px}.food-title{font-size:18px}.food-desc{font-size:12px}.food-bottom{align-items:flex-start;flex-direction:column}.add{width:100%}.about-grid,.location-grid{grid-template-columns:1fr}.about-image{min-height:245px}.section-head{margin-bottom:22px}}
 </style>
@@ -50,209 +53,142 @@ section{padding:68px 0}.section-head{text-align:center;max-width:700px;margin:0 
  <div class="about-image" role="img" aria-label="Warm restaurant dining room"></div>
  <div class="about-copy"><div class="eyebrow">A taste of togetherness</div><h2>Good food brings people together.</h2><p>At Vikram's Restaurant, the menu celebrates familiar favourites and regional Indian dishes. Whether you're stopping by for a comforting meal or sharing food with family, there's something delicious to discover.</p><div class="feature-list"><div class="feature"><div class="feature-icon">🍃</div><div><strong>Flavours to savour</strong><small>A broad menu of vegetarian and non-vegetarian favourites</small></div></div><div class="feature"><div class="feature-icon">🍽️</div><div><strong>Something for everyone</strong><small>Rice, breads, curries, beverages, and desserts</small></div></div><div class="feature"><div class="feature-icon">📍</div><div><strong>Located in Nerul</strong><small>Navi Mumbai, Maharashtra</small></div></div></div></div>
 </div></section>
-<section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Come say hello</div><h2>Visit Vikram's Restaurant</h2><p>We look forward to welcoming you. Contact details can be added here when you provide them.</p></div>
+<section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Come say hello</div><h2>Visit Vikram's Restaurant</h2><p>Questions about our menu? Call us or message us on WhatsApp.</p><div class="contact-actions"><a class="contact-call" href="tel:+918369815079">☎ Call 83698 15079</a><a class="contact-whatsapp" href="https://wa.me/918369815079?text=Hello%20Vikram%27s%20Restaurant" target="_blank" rel="noopener">WhatsApp Us ↗</a></div><p class="contact-note">Please confirm the restaurant phone number and menu prices with the owner before sharing this website with customers.</p></div>
 <div class="location-grid"><div class="info-card"><h3>📍 Find Us</h3><p>Nerul, Navi Mumbai 400706,<br>Maharashtra, India</p><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Nerul%2C+Navi+Mumbai+400706%2C+Maharashtra%2C+India" target="_blank" rel="noopener">Open location in Google Maps ↗</a></div><div class="info-card"><h3>🍽️ Planning a visit?</h3><p>Browse the menu and build a sample cart. Online payment, live ordering, and delivery are not connected in this demo yet.</p><a class="map-link" href="#menu">Browse menu ↗</a></div></div>
 </div></section>
 </main>
-<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home">VIKRAM'S <span>RESTAURANT</span><small>GOOD FOOD · GREAT MOMENTS</small></a><small>© <span id="year"></span> Vikram's Restaurant. Sample website.</small><small>Nerul · Navi Mumbai · Maharashtra</small></div></footer>
+<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home">VIKRAM'S <span>RESTAURANT</span><small>GOOD FOOD · GREAT MOMENTS</small></a><small>© <span id="year"></span> Vikram's Restaurant.</small><small>Nerul · Navi Mumbai · Maharashtra</small></div></footer>
 
 <div class="overlay" id="overlay"></div>
 <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart" aria-hidden="true"><div class="cart-head"><h2>Your Cart</h2><button class="close-cart" id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-total"><div class="total-line"><span>Total</span><span id="cartTotal">₹0</span></div><button class="primary" style="width:100%" id="demoCheckout">Review Sample Order</button><button class="clear-cart" id="clearCart">Clear cart</button></div></aside>
+
 <script>
 const dishes = [
-{name:"Dal Fry",mr:"डाळ फ्राय",cat:"Main Course · Veg",group:"Vegetarian",desc:"Yellow lentils tempered with aromatic Indian spices.",price:216,img:"https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"},
-{name:"Pithla",mr:"पिठलं",cat:"Main Course · Veg",group:"Vegetarian",desc:"Traditional Maharashtrian gram-flour curry.",price:238,img:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"},
-{name:"Matki Usal",mr:"मटकी उसळ",cat:"Main Course · Veg",group:"Vegetarian",desc:"Sprouted moth beans cooked with aromatic masala.",price:238,img:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"},
-{name:"Matki Fry",mr:"मटकी फ्राय",cat:"Main Course · Veg",group:"Vegetarian",desc:"A savoury regional bean preparation.",price:238,img:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"},
-{name:"Batata Bhaaji Dry",mr:"बटाटा भाजी ड्राय",cat:"Main Course · Veg",group:"Vegetarian",desc:"Potatoes cooked with traditional spices.",price:249,img:"https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=700&q=80"},
-{name:"Dal Tadka",mr:"डाळ तडका",cat:"Main Course · Veg",group:"Vegetarian",desc:"Lentils finished with fragrant tempering.",price:249,img:"https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"},
-{name:"Dal Kolhapuri",mr:"डाळ कोल्हापुरी",cat:"Main Course · Veg",group:"Vegetarian",desc:"A spicy Kolhapuri-style lentil dish.",price:249,img:"https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"},
-{name:"Dal Lasooni",mr:"डाळ लसूणी",cat:"Main Course · Veg",group:"Vegetarian",desc:"Lentils with a garlic-forward flavour.",price:249,img:"https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=80"},
-{name:"Paneer Butter Masala",mr:"पनीर बटर मसाला",cat:"Main Course · Veg",group:"Vegetarian",desc:"Paneer in a creamy tomato and butter gravy.",price:324,img:"https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80"},
-{name:"Paneer Tikka Masala",mr:"पनीर टिक्का मसाला",cat:"Main Course · Veg",group:"Vegetarian",desc:"Spiced paneer in a rich masala sauce.",price:324,img:"https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80"},
-{name:"Kadai Paneer",mr:"कढाई पनीर",cat:"Main Course · Veg",group:"Vegetarian",desc:"Paneer tossed with peppers and Indian spices.",price:310,img:"https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80"},
-{name:"Palak Paneer",mr:"पालक पनीर",cat:"Main Course · Veg",group:"Vegetarian",desc:"Paneer in a gently spiced spinach gravy.",price:292,img:"https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=700&q=80"},
-{name:"Mix Veg",mr:"मिक्स व्हेज",cat:"Main Course · Veg",group:"Vegetarian",desc:"Seasonal vegetables in a traditional curry.",price:270,img:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"},
-{name:"Veg Kolhapuri",mr:"व्हेज कोल्हापुरी",cat:"Main Course · Veg",group:"Vegetarian",desc:"Mixed vegetables in a bold regional gravy.",price:270,img:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"},
-{name:"Veg Handi",mr:"व्हेज हांडी",cat:"Main Course · Veg",group:"Vegetarian",desc:"Mixed vegetables simmered in rich handi masala.",price:285,img:"https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"},
-{name:"Jeera Rice",mr:"जीरा राईस",cat:"Rice & Biryani",group:"Rice",desc:"Fragrant rice tossed with cumin.",price:180,img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=700&q=80"},
-{name:"Steamed Rice",mr:"स्टीम राईस",cat:"Rice & Biryani",group:"Rice",desc:"Steamed rice, a comforting meal staple.",price:150,img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=700&q=80"},
-{name:"Veg Pulao",mr:"व्हेज पुलाव",cat:"Rice & Biryani",group:"Rice",desc:"Aromatic rice cooked with vegetables and spices.",price:220,img:"https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=700&q=80"},
-{name:"Veg Biryani",mr:"व्हेज बिर्याणी",cat:"Rice & Biryani",group:"Rice",desc:"Layered fragrant rice with vegetables and spices.",price:260,img:"https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=700&q=80"},
-{name:"Chicken Biryani",mr:"चिकन बिर्याणी",cat:"Rice & Biryani",group:"Chicken",desc:"Aromatic basmati rice layered with spiced chicken.",price:320,img:"https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=85"},
-{name:"Mutton Biryani",mr:"मटण बिर्याणी",cat:"Rice & Biryani",group:"Mutton",desc:"Fragrant biryani rice with richly spiced mutton.",price:380,img:"https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=700&q=80"},
-{name:"Chicken Curry",mr:"चिकन करी",cat:"Main Course · Non-Veg",group:"Chicken",desc:"Chicken simmered in a classic Indian curry.",price:320,img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"},
-{name:"Chicken Masala",mr:"चिकन मसाला",cat:"Main Course · Non-Veg",group:"Chicken",desc:"Chicken cooked in a richly spiced masala gravy.",price:340,img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"},
-{name:"Butter Chicken",mr:"बटर चिकन",cat:"Main Course · Non-Veg",group:"Chicken",desc:"Chicken in a creamy tomato-based sauce.",price:360,img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"},
-{name:"Chicken Handi",mr:"चिकन हांडी",cat:"Main Course · Non-Veg",group:"Chicken",desc:"Chicken cooked in a rich, traditional handi gravy.",price:360,img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"},
-{name:"Chicken Kolhapuri",mr:"चिकन कोल्हापुरी",cat:"Main Course · Non-Veg",group:"Chicken",desc:"A spicy regional chicken curry.",price:350,img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"},
-{name:"Mutton Curry",mr:"मटण करी",cat:"Main Course · Non-Veg",group:"Mutton",desc:"Traditional mutton curry with aromatic spices.",price:390,img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"},
-{name:"Mutton Masala",mr:"मटण मसाला",cat:"Main Course · Non-Veg",group:"Mutton",desc:"Mutton in a full-bodied Indian masala gravy.",price:410,img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"},
-{name:"Fish Curry",mr:"फिश करी",cat:"Seafood",group:"Seafood",desc:"Fish in a coastal-style spiced curry.",price:340,img:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=700&q=80"},
-{name:"Prawns Masala",mr:"प्रॉन्स मसाला",cat:"Seafood",group:"Seafood",desc:"Prawns cooked in a savoury masala sauce.",price:390,img:"https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=700&q=80"},
-{name:"Butter Roti",mr:"बटर रोटी",cat:"Breads",group:"Breads",desc:"Soft Indian flatbread finished with butter.",price:35,img:"https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=700&q=80"},
-{name:"Tandoori Roti",mr:"तंदूरी रोटी",cat:"Breads",group:"Breads",desc:"Traditional tandoor-baked flatbread.",price:30,img:"https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=700&q=80"},
-{name:"Butter Naan",mr:"बटर नान",cat:"Breads",group:"Breads",desc:"Soft leavened bread with a buttery finish.",price:55,img:"https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=700&q=80"},
-{name:"Plain Naan",mr:"प्लेन नान",cat:"Breads",group:"Breads",desc:"Soft, oven-baked Indian bread.",price:45,img:"https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=700&q=80"},
-{name:"Gulab Jamun",mr:"गुलाब जामुन",cat:"Desserts",group:"Desserts",desc:"Soft milk-solid sweets soaked in fragrant syrup.",price:97,img:"https://images.unsplash.com/photo-1666190092159-4a8b4f80f5c0?auto=format&fit=crop&w=700&q=80"},
-{name:"Caramel Custard",mr:"कॅरमेल कस्टर्ड",cat:"Desserts",group:"Desserts",desc:"Silky custard with a caramel topping.",price:119,img:"https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"},
-{name:"Fresh Lime Soda",mr:"फ्रेश लाईम सोडा",cat:"Beverages",group:"Drinks",desc:"Refreshing lime soda.",price:70,img:"https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=700&q=80"},
-{name:"Masala Chaas",mr:"मसाला छास",cat:"Beverages",group:"Drinks",desc:"Cooling buttermilk seasoned with spices.",price:45,img:"https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=700&q=80"}
+{name:"Dal Fry",local:"डाळ फ्राय",price:216,cat:"Main Course · Veg",desc:"Comforting yellow lentils with Indian spices.",img:"photo-1547592180-85f173990554"},
+{name:"Pithla",local:"पिठला",price:238,cat:"Main Course · Veg",desc:"A traditional Maharashtrian gram-flour preparation.",img:"photo-1547592180-85f173990554"},
+{name:"Matki Usal",local:"मटकी उसळ",price:238,cat:"Main Course · Veg",desc:"Sprouted moth beans cooked with aromatic masala.",img:"photo-1512621776951-a57141f2eefd"},
+{name:"Matki Fry",local:"मटकी फ्राय",price:238,cat:"Main Course · Veg",desc:"A savoury regional bean preparation.",img:"photo-1512621776951-a57141f2eefd"},
+{name:"Batata Bhaaji Dry",local:"बटाटा भाजी ड्राय",price:249,cat:"Main Course · Veg",desc:"Spiced potato preparation.",img:"photo-1518977676601-b53f82aba655"},
+{name:"Varhadi Shev Bhaaji",local:"वऱ्हाडी शेव भाजी",price:238,cat:"Main Course · Veg",desc:"A bold regional curry with shev.",img:"photo-1547592180-85f173990554"},
+{name:"Dal Tadka",local:"डाळ तडका",price:249,cat:"Main Course · Veg",desc:"Lentils finished with a fragrant tempering.",img:"photo-1547592180-85f173990554"},
+{name:"Dal Kolhapuri",local:"डाळ कोल्हापुरी",price:249,cat:"Main Course · Veg",desc:"A spicy Kolhapuri-style lentil dish.",img:"photo-1547592180-85f173990554"},
+{name:"Dal Lasooni",local:"डाळ लसूणी",price:249,cat:"Main Course · Veg",desc:"Lentils with a garlic-forward flavour.",img:"photo-1547592180-85f173990554"},
+{name:"Varhadi Batata Bhaaji",local:"वऱ्हाडी बटाटा भाजी",price:249,cat:"Main Course · Veg",desc:"A regional potato curry.",img:"photo-1518977676601-b53f82aba655"},
+{name:"Dahi Pithla",local:"दही पिठला",price:270,cat:"Main Course · Veg",desc:"A tangy variation on a Maharashtrian classic.",img:"photo-1547592180-85f173990554"},
+
+{name:"Matki Methi Fry",local:"मटकी मेथी फ्राय",price:270,cat:"Main Course · Veg",desc:"Matki and fenugreek cooked with spices.",img:"photo-1512621776951-a57141f2eefd"},
+{name:"Lasooni Methi",local:"लसूणी मेथी",price:260,cat:"Main Course · Veg",desc:"Fenugreek with garlic and Indian spices.",img:"photo-1547592180-85f173990554"},
+{name:"Paneer Methi Dry",local:"पनीर मेथी ड्राय",price:292,cat:"Main Course · Veg",desc:"Paneer and fenugreek tossed in masala.",img:"photo-1631452180519-c014fe946bc7"},
+{name:"Bharli Vangi Masala",local:"भरली वांगी मसाला",price:292,cat:"Main Course · Veg",desc:"Stuffed eggplant in a rich regional masala.",img:"photo-1512621776951-a57141f2eefd"},
+{name:"Paneer Bhurji Curry",local:"पनीर भुर्जी करी",price:314,cat:"Main Course · Veg",desc:"Crumbled paneer in a spiced curry.",img:"photo-1631452180519-c014fe946bc7"},
+{name:"Paneer Bhurji Dry",local:"पनीर भुर्जी ड्राय",price:324,cat:"Main Course · Veg",desc:"A dry-style paneer bhurji preparation.",img:"photo-1631452180519-c014fe946bc7"},
+{name:"Kollam Rice",local:"कोलम राईस",price:94,cat:"Rice",desc:"Everyday rice, a classic meal companion.",img:"photo-1516684732162-798a0062be99"},
+{name:"Basmati Rice",local:"बासमती राईस",price:104,cat:"Rice",desc:"Fragrant long-grain basmati rice.",img:"photo-1516684732162-798a0062be99"},
+{name:"Jeera Rice",local:"जीरा राईस",price:114,cat:"Rice",desc:"Basmati rice tempered with cumin.",img:"photo-1516684732162-798a0062be99"},
+{name:"Curd Rice",local:"दही राईस",price:249,cat:"Rice",desc:"Cooling rice mixed with yoghurt.",img:"photo-1516684732162-798a0062be99"},
+{name:"Dal Khichdi / Tadka",local:"डाळ खिचडी / तडका",price:229,cat:"Rice",desc:"A comforting rice and lentil dish.",img:"photo-1547592180-85f173990554"},
+{name:"Egg Biryani",local:"अंडा बिर्यानी",price:292,cat:"Biryani",desc:"Fragrant spiced rice with egg.",img:"photo-1563379091339-03246963d96c"},
+{name:"Chicken Pulao / Biryani",local:"चिकन पुलाव / बिर्यानी",price:314,cat:"Biryani",desc:"Aromatic rice with chicken and spices.",img:"photo-1563379091339-03246963d96c"},
+{name:"Chicken Tikka Biryani",local:"चिकन टिक्का बिर्यानी",price:357,cat:"Biryani",desc:"Tikka-style chicken layered with fragrant rice.",img:"photo-1563379091339-03246963d96c"},
+{name:"Mutton Pulao / Biryani",local:"मटण पुलाव / बिर्यानी",price:438,cat:"Biryani",desc:"A rich, aromatic mutton rice dish.",img:"photo-1563379091339-03246963d96c"},
+{name:"Prawns Biryani",local:"कोळंबी बिर्यानी",price:438,cat:"Biryani",desc:"Spiced rice with prawns.",img:"photo-1563379091339-03246963d96c"},
+{name:"Basa Biryani",local:"बासा बिर्यानी",price:413,cat:"Biryani",desc:"Biryani prepared with basa fish.",img:"photo-1563379091339-03246963d96c"},
+{name:"Surmai Biryani",local:"सुरमई बिर्यानी",price:438,cat:"Biryani",desc:"A fragrant biryani with surmai fish.",img:"photo-1563379091339-03246963d96c"},
+{name:"Alani Khichdi (Chicken / Mutton)",local:"अलाणी खिचडी (चिकन/मटण)",price:312,cat:"Rice",desc:"A simple, savoury rice preparation.",img:"photo-1547592180-85f173990554"},
+{name:"Tandlachi Bhakri",local:"तांदळाची भाकरी",price:36,cat:"Indian Breads",desc:"Traditional rice-flour bhakri.",img:"photo-1601050690597-df0568f70950"},
+{name:"Jowar Bhakri",local:"ज्वारीची भाकरी",price:38,cat:"Indian Breads",desc:"Traditional jowar flatbread.",img:"photo-1601050690597-df0568f70950"},
+{name:"Neer Dosa (3 pcs)",local:"नीर डोसा",price:65,cat:"Indian Breads",desc:"Soft, delicate rice dosa.",img:"photo-1589301760014-d929f3979dbc"},
+{name:"Wade (4 pcs)",local:"वडे",price:97,cat:"Indian Breads",desc:"Crisp, golden traditional wade.",img:"photo-1601050690597-df0568f70950"},
+{name:"Roti / Butter Roti",local:"रोटी / बटर रोटी",price:30,cat:"Indian Breads",desc:"Soft Indian flatbread; butter option may vary.",img:"photo-1601050690597-df0568f70950"},
+{name:"Chapati / Butter Chapati",local:"चपाती / बटर चपाती",price:30,cat:"Indian Breads",desc:"Everyday soft chapati.",img:"photo-1601050690597-df0568f70950"},
+{name:"Naan / Butter Naan",local:"नान / बटर नान",price:62,cat:"Indian Breads",desc:"Tandoor-style naan.",img:"photo-1601050690597-df0568f70950"},
+{name:"Garlic Naan / Butter Garlic Naan",local:"गार्लिक नान / बटर गार्लिक नान",price:78,cat:"Indian Breads",desc:"Naan finished with garlic flavour.",img:"photo-1601050690597-df0568f70950"},
+{name:"Cheese Garlic Naan",local:"चीज गार्लिक नान",price:184,cat:"Indian Breads",desc:"Garlic naan with cheese.",img:"photo-1601050690597-df0568f70950"},
+{name:"Chicken Gassi",local:"चिकन गस्सी",price:422,cat:"Main Course · Chicken",desc:"Chicken in a rich, coastal-style curry.",img:"photo-1603894584373-5ac82b2ae398"},
+{name:"Chicken Alani Fry",local:"चिकन अलणी फ्राय",price:422,cat:"Main Course · Chicken",desc:"Chicken prepared in a traditional style.",img:"photo-1603894584373-5ac82b2ae398"},
+{name:"Varhadi Chicken",local:"वऱ्हाडी चिकन",price:454,cat:"Main Course · Chicken",desc:"A bold, spicy regional chicken curry.",img:"photo-1603894584373-5ac82b2ae398"},
+{name:"Kolhapuri Chicken",local:"कोल्हापुरी चिकन",price:454,cat:"Main Course · Chicken",desc:"A robust Kolhapuri-style chicken curry.",img:"photo-1603894584373-5ac82b2ae398"},
+{name:"Green Chicken (Semi Gravy)",local:"ग्रीन चिकन",price:454,cat:"Main Course · Chicken",desc:"Chicken in a fragrant green masala gravy.",img:"photo-1603894584373-5ac82b2ae398"},
+{name:"Chicken Malwani",local:"चिकन मालवणी",price:454,cat:"Main Course · Chicken",desc:"Coastal Malwani chicken curry.",img:"photo-1603894584373-5ac82b2ae398"},
+{name:"Egg Curry",local:"अंडा करी",price:303,cat:"Main Course · Egg",desc:"Eggs in a spiced Indian curry.",img:"photo-1603894584373-5ac82b2ae398"},
+{name:"Varhadi Mutton",local:"वऱ्हाडी मटण",price:556,cat:"Main Course · Mutton",desc:"Spicy regional mutton preparation.",img:"photo-1545247181-516773cae754"},
+{name:"Kolhapuri Mutton",local:"कोल्हापुरी मटण",price:556,cat:"Main Course · Mutton",desc:"A bold Kolhapuri mutton curry.",img:"photo-1545247181-516773cae754"},
+{name:"Green Mutton (Semi Gravy)",local:"ग्रीन मटण",price:556,cat:"Main Course · Mutton",desc:"Mutton in green masala gravy.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Malwani",local:"मटण मालवणी",price:556,cat:"Main Course · Mutton",desc:"Coastal-style mutton curry.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Gassi",local:"मटण गस्सी",price:556,cat:"Main Course · Mutton",desc:"Rich regional mutton curry.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Alani Fry",local:"मटण अलणी फ्राय",price:556,cat:"Main Course · Mutton",desc:"Traditional mutton preparation.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Kheema Fry",local:"मटण खिमा फ्राय",price:404,cat:"Main Course · Mutton",desc:"Spiced minced mutton fry.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Kheema Egg Fry",local:"मटण खिमा अंडा फ्राय",price:438,cat:"Main Course · Mutton",desc:"Minced mutton with egg.",img:"photo-1545247181-516773cae754"},
+{name:"Kala Mutton Fry",local:"काळा मटण फ्राय",price:556,cat:"Main Course · Mutton",desc:"A deep, dark regional masala fry.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Masala Fry",local:"मटण मसाला फ्राय",price:556,cat:"Main Course · Mutton",desc:"Mutton tossed in aromatic masala.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Kharda Fry",local:"मटण खडा फ्राय",price:556,cat:"Main Course · Mutton",desc:"A spicy mutton preparation.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Malwani Sukha",local:"मटण मालवणी सुखा",price:556,cat:"Main Course · Mutton",desc:"Dry-style Malwani mutton.",img:"photo-1545247181-516773cae754"},
+{name:"Mutton Dhangari",local:"मटण धनगरी",price:556,cat:"Main Course · Mutton",desc:"Traditional regional mutton preparation.",img:"photo-1545247181-516773cae754"},
+{name:"Bandga Curry",local:"बांगडा करी",price:404,cat:"Seafood",desc:"Mackerel curry with coastal flavours.",img:"photo-1559737558-2f5a35f4523b"},
+{name:"Clams (Tisrya) Malwani Masala (Semi Gravy)",local:"तिसऱ्या मालवणी मसाला",price:404,cat:"Seafood",desc:"Clams cooked in Malwani masala.",img:"photo-1559737558-2f5a35f4523b"},
+
+{name:"Prawns Malwani Curry",local:"कोळंबी मालवणी करी",price:472,cat:"Seafood",desc:"Prawns in a coastal-style curry.",img:"photo-1559737558-2f5a35f4523b"},
+{name:"Rawas Curry",local:"रावस करी",price:539,cat:"Seafood",desc:"Rawas fish curry.",img:"photo-1559737558-2f5a35f4523b"},
+{name:"Surmai Curry",local:"सुरमई करी",price:539,cat:"Seafood",desc:"Surmai fish in aromatic curry.",img:"photo-1559737558-2f5a35f4523b"},
+{name:"Pomfret Curry",local:"पापलेट करी",price:573,cat:"Seafood",desc:"Pomfret curry with regional spices.",img:"photo-1559737558-2f5a35f4523b"},
+{name:"Crab Malwani Masala (Semi Gravy)",local:"खेकडा मालवणी मसाला",price:651,cat:"Seafood",desc:"Crab prepared with Malwani masala.",img:"photo-1559737558-2f5a35f4523b"},
+{name:"Mineral Water",local:"मिनरल वॉटर",price:30,cat:"Beverages",desc:"Bottled mineral water.",img:"photo-1548839140-29a749e1cf4d"},
+{name:"Soft Drinks (250 ml)",local:"सॉफ्ट ड्रिंक्स",price:30,cat:"Beverages",desc:"Soft drink, 250 ml.",img:"photo-1513558161293-cdaf765edfd"},
+{name:"Soft Drinks (750 ml)",local:"सॉफ्ट ड्रिंक्स",price:75,cat:"Beverages",desc:"Soft drink, 750 ml.",img:"photo-1513558161293-cdaf765edfd"},
+{name:"Diet Coke",local:"डायट कोक",price:75,cat:"Beverages",desc:"Diet cola.",img:"photo-1513558161293-cdaf765edfd"},
+{name:"Solkadi",local:"सोलकढी",price:87,cat:"Beverages",desc:"A refreshing coastal kokum and coconut drink.",img:"photo-1544145945-f90425340c7e"},
+{name:"Kokum Sarbat",local:"कोकम सरबत",price:87,cat:"Beverages",desc:"Sweet-tart kokum cooler.",img:"photo-1544145945-f90425340c7e"},
+{name:"Butter Milk",local:"ताक",price:87,cat:"Beverages",desc:"Refreshing spiced buttermilk.",img:"photo-1544145945-f90425340c7e"},
+{name:"Fresh Lime Soda / Water",local:"फ्रेश लाईम सोडा / वॉटर",price:97,cat:"Beverages",desc:"Fresh lime drink; mineral-water option noted on menu.",img:"photo-1544145945-f90425340c7e"},
+{name:"Red Bull",local:"रेड बुल",price:173,cat:"Beverages",desc:"Energy drink.",img:"photo-1513558161293-cdaf765edfd"},
+{name:"Gulab Jamun (3 pcs)",local:"गुलाब जामुन",price:97,cat:"Desserts",desc:"Three soft, syrup-soaked gulab jamun.",img:"photo-1666190092159-3e3e3f9c4c13"},
+{name:"Caramel Custard",local:"कॅरॅमल कस्टर्ड",price:119,cat:"Desserts",desc:"Silky custard with caramel.",img:"photo-1488477181946-6428a0291777"}
 ];
-
-const hero = document.querySelector(".hero");
-hero.style.backgroundImage = "linear-gradient(90deg,#17110df2 0%,#21150dd9 42%,#21150d36 100%),url('https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=2000&q=85')";
-
-const grid = document.getElementById("menuGrid");
-const searchInput = document.getElementById("searchInput");
-const categorySelect = document.getElementById("categorySelect");
-const categoryChips = document.getElementById("categoryChips");
-let activeCategory = "All";
-let cart = {};
-
-const categories = ["All", ...new Set(dishes.map(d => d.cat))];
-
-categories.forEach(category => {
-  if (category !== "All") {
-    const option = document.createElement("option");
-    option.value = category;
-    option.textContent = category;
-    categorySelect.appendChild(option);
-  }
-  const chip = document.createElement("button");
-  chip.className = "chip" + (category === "All" ? " active" : "");
-  chip.textContent = category;
-  chip.type = "button";
-  chip.addEventListener("click", () => {
-    activeCategory = category;
-    categorySelect.value = category;
-    renderCategories();
-    renderMenu();
-  });
-  categoryChips.appendChild(chip);
-});
-
-function renderCategories() {
-  [...categoryChips.children].forEach(chip => {
-    chip.classList.toggle("active", chip.textContent === activeCategory);
-  });
+const categories=["All",...new Set(dishes.map(d=>d.cat))];
+const grid=document.getElementById("menuGrid"), search=document.getElementById("searchInput"), select=document.getElementById("categorySelect"), chips=document.getElementById("categoryChips");
+let activeCategory="All", cart={};
+const money=n=>"₹"+n.toLocaleString("en-IN");
+categories.forEach(c=>{if(c!=="All"){const o=document.createElement("option");o.value=c;o.textContent=c;select.appendChild(o)}});
+function renderChips(){chips.innerHTML="";categories.forEach(c=>{const b=document.createElement("button");b.className="chip"+(c===activeCategory?" active":"");b.textContent=c;b.onclick=()=>{activeCategory=c;select.value=c;renderChips();renderMenu()};chips.appendChild(b)})}
+// Use dish-specific image searches rather than broken photo IDs. The unique lock
+// helps prevent the same photo from being repeated across menu cards.
+function imageUrl(d,index){
+ const name=(d.name||"").toLowerCase();
+ // Use dish-specific Unsplash images so different menu items don't all show the same photo.
+ const photos={
+  "dal fry":"photo-1547592180-85f173990554",
+  "pithla":"photo-1547592180-85f173990554",
+  "matki usal":"photo-1512621776951-a57141f2eefd",
+  "matki fry":"photo-1512621776951-a57141f2eefd",
+  "batata bhaaji dry":"photo-1518977676601-b53f82aba655",
+  "varhadi shev bhaaji":"photo-1603894584373-5ac82b2ae398",
+  "dal tadka":"photo-1547592180-85f173990554",
+  "dal kolhapuri":"photo-1547592180-85f173990554",
+  "dal lasooni":"photo-1547592180-85f173990554"
+ };
+ let photo=photos[name];
+ if(!photo){
+  if(/biryani|pulao/.test(name)) photo="photo-1563379091339-03246963d96c";
+  else if(/chicken|tikka/.test(name)) photo="photo-1603894584373-5ac82b2ae398";
+  else if(/mutton|kheema/.test(name)) photo="photo-1544025162-d76694265947";
+  else if(/fish|prawn|surmai|basa|seafood/.test(name)) photo="photo-1519708227418-c8fd9a32b7a2";
+  else if(/potato|batata/.test(name)) photo="photo-1518977676601-b53f82aba655";
+  else if(/rice|khichdi/.test(name)) photo="photo-1516684732162-798a0062be99";
+  else if(/bread|bhakri|roti|naan|chapati/.test(name)) photo="photo-1601050690597-df0568f70950";
+  else photo=d.img||"photo-1547592180-85f173990554";
+ }
+ return "https://images.unsplash.com/"+photo+"?auto=format&fit=crop&w=760&h=520&q=80";
 }
-
-function renderMenu() {
-  const query = searchInput.value.trim().toLowerCase();
-  const filtered = dishes.filter(d => {
-    const matchCategory = activeCategory === "All" || d.cat === activeCategory;
-    const matchSearch = (d.name + " " + d.mr + " " + d.desc + " " + d.group).toLowerCase().includes(query);
-    return matchCategory && matchSearch;
-  });
-
-  grid.innerHTML = "";
-  if (!filtered.length) {
-    grid.innerHTML = '<div class="empty">No dishes found. Try another search or category.</div>';
-    return;
-  }
-
-  filtered.forEach(d => {
-    const card = document.createElement("article");
-    card.className = "food-card";
-    card.innerHTML = `
-      <div class="food-photo"><img src="${d.img}" alt="${d.name}" loading="lazy"></div>
-      <div class="food-content">
-        <div class="food-cat">${d.cat}</div>
-        <div class="food-title">${d.name}</div>
-        <div class="food-marathi">${d.mr}</div>
-        <p class="food-desc">${d.desc}</p>
-        <div class="food-bottom">
-          <div><div class="price">₹${d.price}</div><div class="quantity-note">Per serving</div></div>
-          <button class="add" type="button" data-name="${d.name}">＋ Add to Cart</button>
-        </div>
-      </div>`;
-    const img = card.querySelector("img");
-    img.addEventListener("error", () => {
-      img.style.display = "none";
-      img.parentElement.classList.add("photo-unavailable");
-    });
-    card.querySelector(".add").addEventListener("click", () => addToCart(d.name));
-    grid.appendChild(card);
-  });
-}
-
-searchInput.addEventListener("input", renderMenu);
-categorySelect.addEventListener("change", () => {
-  activeCategory = categorySelect.value;
-  renderCategories();
-  renderMenu();
-});
-
-function addToCart(name) {
-  cart[name] = (cart[name] || 0) + 1;
-  updateCart();
-}
-function changeQty(name, amount) {
-  cart[name] = (cart[name] || 0) + amount;
-  if (cart[name] <= 0) delete cart[name];
-  updateCart();
-}
-function updateCart() {
-  const count = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
-  document.getElementById("cartCount").textContent = count;
-  const items = document.getElementById("cartItems");
-  items.innerHTML = "";
-  const entries = Object.entries(cart);
-  if (!entries.length) {
-    items.innerHTML = '<div class="empty">Your cart is empty. Add a dish from the menu.</div>';
-  }
-  entries.forEach(([name, qty]) => {
-    const dish = dishes.find(d => d.name === name);
-    if (!dish) return;
-    const row = document.createElement("div");
-    row.className = "cart-row";
-    row.innerHTML = `
-      <div><strong>${dish.name}</strong><small>₹${dish.price} each</small><div><strong>₹${dish.price * qty}</strong></div></div>
-      <div class="qty"><button type="button" aria-label="Decrease ${name}">−</button><span>${qty}</span><button type="button" aria-label="Increase ${name}">+</button></div>`;
-    const buttons = row.querySelectorAll("button");
-    buttons[0].addEventListener("click", () => changeQty(name, -1));
-    buttons[1].addEventListener("click", () => changeQty(name, 1));
-    items.appendChild(row);
-  });
-  const total = entries.reduce((sum, [name, qty]) => {
-    const dish = dishes.find(d => d.name === name);
-    return sum + (dish ? dish.price * qty : 0);
-  }, 0);
-  document.getElementById("cartTotal").textContent = "₹" + total;
-}
-
-const panel = document.getElementById("cartPanel");
-const overlay = document.getElementById("overlay");
-function openCart() {
-  panel.classList.add("open");
-  overlay.classList.add("show");
-  panel.setAttribute("aria-hidden", "false");
-}
-function closeCart() {
-  panel.classList.remove("open");
-  overlay.classList.remove("show");
-  panel.setAttribute("aria-hidden", "true");
-}
-document.getElementById("openCart").addEventListener("click", openCart);
-document.getElementById("closeCart").addEventListener("click", closeCart);
-overlay.addEventListener("click", closeCart);
-document.getElementById("clearCart").addEventListener("click", () => {
-  cart = {};
-  updateCart();
-});
-document.getElementById("demoCheckout").addEventListener("click", () => {
-  const count = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
-  if (!count) {
-    alert("Your cart is empty. Please add a dish first.");
-    return;
-  }
-  alert("This is a sample website. Online ordering and payment are not connected yet.");
-});
-document.getElementById("year").textContent = new Date().getFullYear();
-
-renderMenu();
-updateCart();
+function renderMenu(){const q=search.value.trim().toLowerCase();const filtered=dishes.filter(d=>(activeCategory==="All"||d.cat===activeCategory)&&(`${d.name} ${d.local} ${d.cat}`.toLowerCase().includes(q)));grid.innerHTML="";if(!filtered.length){grid.innerHTML='<div class="empty">No dishes found. Try another search.</div>';return}filtered.forEach(d=>{const i=dishes.indexOf(d),card=document.createElement("article");card.className="food-card";card.innerHTML=`<div class="food-photo"><img loading="lazy" src="${imageUrl(d,i)}" alt="${d.name}" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('photo-unavailable');this.parentElement.setAttribute('aria-label','Photo unavailable for ${d.name.replace(/'/g,'')}');"></div><div class="food-content"><span class="food-cat">${d.cat}</span><h3 class="food-title">${d.name}</h3><div class="food-marathi">${d.local}</div><p class="food-desc">${d.desc}</p><div class="food-bottom"><div><span class="price">${money(d.price)}</span><div class="quantity-note">${d.qty||"Per serving"}</div></div><button class="add" data-add="${i}">＋ Add to Cart</button></div></div>`;grid.appendChild(card)})}
+function updateCart(){const count=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById("cartCount").textContent=count;const items=document.getElementById("cartItems");items.innerHTML="";let total=0;Object.entries(cart).forEach(([idx,qty])=>{const d=dishes[+idx];total+=d.price*qty;const row=document.createElement("div");row.className="cart-row";row.innerHTML=`<div><strong>${d.name}</strong><small>${money(d.price)} each</small><div><b>${money(d.price*qty)}</b></div></div><div class="qty"><button data-minus="${idx}" aria-label="Remove one">−</button><span>${qty}</span><button data-plus="${idx}" aria-label="Add one">+</button></div>`;items.appendChild(row)});if(!count)items.innerHTML='<p style="color:var(--muted);padding:20px 0">Your cart is empty. Add a dish from the menu to begin.</p>';document.getElementById("cartTotal").textContent=money(total)}
+function openCart(){document.getElementById("cartPanel").classList.add("open");document.getElementById("cartPanel").setAttribute("aria-hidden","false");document.getElementById("overlay").classList.add("show")}
+function closeCart(){document.getElementById("cartPanel").classList.remove("open");document.getElementById("cartPanel").setAttribute("aria-hidden","true");document.getElementById("overlay").classList.remove("show")}
+grid.addEventListener("click",e=>{const b=e.target.closest("[data-add]");if(b){const i=b.dataset.add;cart[i]=(cart[i]||0)+1;updateCart();b.textContent="✓ Added";setTimeout(()=>b.textContent="＋ Add to Cart",900)}});
+document.getElementById("cartItems").addEventListener("click",e=>{const p=e.target.closest("[data-plus]"),m=e.target.closest("[data-minus]");if(p){const i=p.dataset.plus;cart[i]=(cart[i]||0)+1}if(m){const i=m.dataset.minus;cart[i]--;if(cart[i]<=0)delete cart[i]}updateCart()});
+search.addEventListener("input",renderMenu);select.addEventListener("change",()=>{activeCategory=select.value;renderChips();renderMenu()});
+document.getElementById("openCart").onclick=openCart;document.getElementById("closeCart").onclick=closeCart;document.getElementById("overlay").onclick=closeCart;document.getElementById("clearCart").onclick=()=>{cart={};updateCart()};
+document.getElementById("demoCheckout").onclick=()=>{if(!Object.keys(cart).length){alert("Your cart is empty. Add a dish first.");return}let summary=Object.entries(cart).map(([i,q])=>`${dishes[+i].name} × ${q} = ${money(dishes[+i].price*q)}`).join("\\n");alert("SAMPLE ORDER SUMMARY\\n\\n"+summary+"\\n\\nTotal: "+document.getElementById("cartTotal").textContent+"\\n\\nThis demo does not send an order or take payment.");};
+document.getElementById("year").textContent=new Date().getFullYear();renderChips();renderMenu();updateCart();
 </script>
 </body>
 </html>
